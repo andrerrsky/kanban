@@ -5,21 +5,116 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.menu1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #e2e2e2;
+  height: 30px;  
+}
+
+.start {
+  margin-left: 15px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-right: 20px;
+  justify-content: end;
+  width: 100%;
+  background-color: #e2e2e2;
+}
+
+.sidebar_menu {
+  height: 100vh;
+  width: 280px;
+  background-color: blue;
+  position: fixed;
+  overflow: hidden;
+  left: -280px;
+  transition: all 0.3s linear;
+}
+
+
+.sidebar_titulo {
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 2px 4px black;
+}
+
+.sidebar_titulo a{
+  color: aliceblue;
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+  line-height: 60px;
+}
+
+.menu2 {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.menu2 li{
+  margin: 10px;
+  padding: 14px 14px;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.3s;
+  
+}
+
+.menu2 li:hover{
+  background-color: rgb(0, 247, 255);
+}
+
+.menu2 i {
+  color: white;
+  font-size: 20px;
+  padding-right: 8px;
+}
+
+.menu2 a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*codigo seguinte para mostrar o side menu não esta funcionando */
+#check:checked .sidebar_menu {
+  left: 280px;
+}
+
+#check{
+  display: non;
+}
+
+
 .board {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
   height: 100vh;
-  background-color: #f2f2f2;
+  background: url(https://images.pexels.com/photos/1933319/pexels-photo-1933319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  height: 100vh;
+  background-size: cover;
 }
 
 .column {
   display: flex;
   flex-direction: column;
   width: 30%;
-  height: 100%;
-  background-color: #fff;
+  height: 95%;
+  background-color: #e2e2e2;
   border-radius: 5px;
   margin: 10px;
   padding: 10px;

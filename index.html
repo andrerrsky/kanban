@@ -3,11 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kanban HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <nav>
+    <div class="menu1">
+      <div class="start"><h2>Inicio</h2></div>
+       <div class="icons"> 
+        <div class="help"><i class="fas fa-question"></i></div>
+        <div class="account"><i class="fas fa-user"></i></div>
+        <div class="search">
+        <input type="text" placeholder="Buscar..."/><i class="fas fa-search"></i>
+       </div> 
+      </div>
+    </div>
+  </nav>
+  
+  <nav>
+    <div class="box_menu">
+      <input type="checkbox" id="check">
+      <div class="menu_icon">
+          <label for="check">
+           <i class="fas fa-bars"></i>
+          </label>
+          <div class="sidebar_menu">
+           <div class="sidebar_titulo">
+             <a href="#">Painel de Controle</a>
+           </div>  
+           <div class="close">
+             <label for="check">
+               <i class="fas fa-times"></i> 
+              </label>
+             <div class="menu2">
+               <ul>
+                 <li>
+                    <i class="fas fa-users"></i>
+                    <a href="#">Usuários</a>
+                 </li>
+                 <li>
+                    <i class="fas fa-file"></i>
+                    <a href="#">Projetos</a>
+                 </li>
+                 <li>
+                    <i class="fas fa-calendar-week"></i>
+                    <a href="#">Calendario</a>
+                 </li>
+                 <li>
+                   <i class="fas fa-gear"></i>
+                   <a href="#">Configurações</a>
+                 </li>
+               </ul>
+             </div>  
+           </div>  
+          </div>        
+          </div>
+      </div>
+    </div>
+  </nav>
+
   <body>
     <div class="board">
-      <div class="column"><h2>Todo</h2></div>
+      <div class="column"><h2>To do</h2></div>
       <div class="column"><h2>In progress</h2></div>
       <div class="column"><h2>Done</h2></div>
     </div>
