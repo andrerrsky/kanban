@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Kanban HTML</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal-styles.css" />
   </head>
   <body>
     <div class="board">
@@ -11,6 +12,25 @@
       <div class="column"><h2>In progress</h2></div>
       <div class="column"><h2>Done</h2></div>
     </div>
-    <script src="script.js"></script>
+    <!-- ------------ Botão inserido apenas para teste do modal ------------ -->
+    <button id="open-modal">Abrir Modal Teste</button>
+    <!-- ------------ Botão inserido apenas para teste do modal ------------ -->
+    <div class="modal" id="modal">
+      <div class="modal-container">
+        <h1>Adicione uma Nova Tarefa</h1>
+        <button id="close-button">X</button>
+        <section>
+          <label>Titulo: </label>
+          <input type="text" id="input-title" placeholder="Insira um Título para a Tarefa"/>
+        </section>
+        <section>
+          <label>Descrição: </label>
+          <textarea id="input-description" placeholder="Insira uma Descrição para a Tarefa"></textarea>
+        </section>
+          <button id="create-button">Criar Tarefa</button>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/modal-script.js"></script>
   </body>
 </html>
