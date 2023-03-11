@@ -1,11 +1,5 @@
-/* 
-  Criei esse estilo simples, pois não sou
-  muito bom com visual, sintam-se a vontade
-  para modifica-lo
-*/
-
 .modal{
-    display: none;
+    display: flex;
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -16,26 +10,35 @@
     left: 0;
   }
   .modal-container{
-    width: 30%;
+    width: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #dddddd;
     position: relative;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px;
     padding: 20px;
   }
-  .modal-container section{
+  .modal-head{
     width: 100%;
+    height: 40px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+    justify-content: flex-start;
+    font-size: 10px;
+    color: #8d8d8d;
   }
-  .modal-container section label{
-    width: 80%;
-    margin-bottom: 5px;
+  .modal-container section{
+    width: 95%;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .modal-container section img{
+    width: 5%;
   }
   .modal-container h1{
     width: 100%;
@@ -48,24 +51,40 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #ddd;
+  }
+  #close-button img{
+    width: 100%;
+    height: 100%;
   }
   #input-title {
-    width: 80%;
+    width: 90%;
     height: 30px;
-    text-align: center;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
   }
   #input-description{
-    width: 80%;
+    width: 90%;
     height: 100px;
-    text-align: center;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
   }
   #create-button{
-    width: 50%;
-    height: 40px;
-    border-radius: 25px;
-    background-color: #e6d967;
+    width: 5%;
+    height: 20px;
     border: none;
     cursor: pointer;
     font-size: 15px;
+    align-self: flex-end;
+    margin-top: 5px;
+    background-color: #ddd;
+  }
+  #create-button img{
+    width: 100%;
+    height: 100%;
   }
   
