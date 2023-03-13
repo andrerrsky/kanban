@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Kanban HTML</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/modal-styles.css" />
-  </head>
-  <body>
-    <div class="board">
-      <div class="column"><h2>Todo</h2>
-        <div class="card">
-          <div class="card-title">
-            <h3>Titulo da Tarefa</h3>
-          </div>
-          <div class="card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae aliquam rem est dignissimos suscipit repudiandae asperiores eius sed facere eveniet? Sit a sed culpa ut aliquid, excepturi quidem ab natus nulla nostrum repudiandae nemo totam magni et quam eum ipsam nisi commodi maxime nobis id at consectetur similique nam? Esse?</p>
-          </div>
-          <hr>
-          <div class="card-bottom">
-            <img class="js-edit" src="img/editar.png" alt="editar">
-            <img class="js-delete" src="img/excluir.png" alt="deletar">
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Kanban HTML</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/modal-styles.css" />
+</head>
+
+<body>
+  <header class="header-icons-wrapper">
+    <div class="header-icon-left">
+      <img src="https://api.iconify.design/material-symbols/home-app-logo.svg?width=32&height=32'" alt="kanban-logo" />
+    </div>
+    <div class="header-icon-right">
+      <img src="https://api.iconify.design/ri/notification-2-line.svg?width=32&height=32" alt="notification-icon" />
+    </div>
+    <div class="header-icon-right">
+      <img src="https://api.iconify.design/iconoir/profile-circle.svg?width=32&height=32" alt="profile-icon" />
+    </div>
+  </header>
+  <section class="board">
+    <div class="column">
+      <h2>Todo</h2>
+      <div class="card">
+        <div class="card-title">
+          <h3>Titulo da Tarefa</h3>
+        </div>
+        <div class="card-body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            aliquam rem est dignissimos suscipit repudiandae asperiores eius
+            sed facere eveniet? Sit a sed culpa ut aliquid, excepturi quidem
+            ab natus nulla nostrum repudiandae nemo totam magni et quam eum
+            ipsam nisi commodi maxime nobis id at consectetur similique nam?
+            Esse?
+          </p>
+        </div>
+        <hr />
+        <div class="card-bottom">
+          <img class="js-edit" src="img/editar.png" alt="editar" />
+          <img class="js-delete" src="img/excluir.png" alt="deletar" />
         </div>
       </div>
-      <div class="column"><h2>In progress</h2></div>
-      <div class="column"><h2>Done</h2></div>
+      <button id="open-modal">+</button>
     </div>
-    <!-- ------------ Botão inserido apenas para teste do modal ------------ -->
-    <button id="open-modal">Abrir Modal Teste</button>
-    <!-- ------------ Botão inserido apenas para teste do modal ------------ -->
-    <div class="modal" id="modal">
-      <div class="modal-container">
-        <h1>Adicione uma Nova Tarefa</h1>
-        <button id="close-button">X</button>
-        <section>
-          <label>Titulo: </label>
-          <input type="text" id="input-title" placeholder="Insira um Título para a Tarefa"/>
-        </section>
-        <section>
-          <label>Descrição: </label>
-          <textarea id="input-description" placeholder="Insira uma Descrição para a Tarefa"></textarea>
-        </section>
-          <button id="create-button">Criar Tarefa</button>
-      </div>
+    <div class="column">
+      <h2>In progress</h2>
+      <button  class="open-modal">+</button>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/modal-script.js"></script>
-  </body>
+    <div class="column">
+      <h2>Done</h2>
+      <button  class="open-modal">+</button>
+    </div>
+    <!---------Botão adicionar nova coluna------->
+    <aside class="add-new-column" column-aside>
+      <button class="button-new-column">+</button>
+    </aside>
+  </section>
+  <!-- ------------ Botão inserido apenas para teste do modal ------------ -->
+  <button >Abrir Modal Teste</button>
+  <!-- ------------ Botão inserido apenas para teste do modal ------------ -->
+  <div class="modal" id="modal">
+    <div class="modal-container">
+      <h1>Adicione uma Nova Tarefa</h1>
+      <button id="close-button">X</button>
+      <section>
+        <label>Titulo: </label>
+        <input type="text" id="input-title" placeholder="Insira um Título para a Tarefa" />
+      </section>
+      <section>
+        <label>Descrição: </label>
+        <textarea id="input-description" placeholder="Insira uma Descrição para a Tarefa"></textarea>
+      </section>
+      <button id="create-button">Criar Tarefa</button>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/modal-script.js"></script>
+</body>
+
 </html>
